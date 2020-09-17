@@ -16,6 +16,82 @@
 </head>
 
 <body>
+    <!-- <div id="simpleModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Login</h3>
+                <span class="closeBtn">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, pariatur impedit perspiciatis nemo facilis atque. Non totam earum nulla molestiae consectetur, reprehenderit magni nobis autem modi amet laudantium dicta aut!</p>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div> -->
+
+    <div id="simpleModal" class="modal">
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <div class="hOne">
+                        <h1>Create Account</h1>
+                    </div>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="ion-social-facebook"></i></a>
+                        <a href="#" class="social"><i class="ion-social-google"></i></a>
+                        <a href="#" class="social"><i class="ion-social-linkedin"></i></a>
+                    </div>
+                    <div class="modalSpan">
+                        <span>or use your email for registration</span>
+                    </div>
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <button>Sign Up</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <div class="hOne">
+                        <h1>Log in</h1>
+                    </div>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="ion-social-facebook"></i></a>
+                        <a href="#" class="social"><i class="ion-social-google"></i></a>
+                        <a href="#" class="social"><i class="ion-social-linkedin"></i></a>
+                    </div>
+                    <div class="modalSpan">
+                        <span>or use your account</span>
+                    </div>
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <div class="forPass">
+                        <a href="#">Forgot your password?</a>
+                    </div>
+                    <button>Log In</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>To keep connected with us please login with your personal info</p>
+                        <button class="ghost" id="signIn">Log In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Don't have an account?</h1>
+                        <p>Enter your personal details and start journey with us</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
     <header id="home">
         <nav>
             <div class="row">
@@ -27,6 +103,17 @@
                     <li><a href="#menu">Menu</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#form">Contact</a></li>
+                    <!-- <li>
+                        <a href="#form"> <i class="ion-log-in"></i> Login</a>
+                    </li>
+                    <li><a href=""><i class="ion-android-cart icon_nav"></i></a></li> -->
+                </ul>
+                <ul class="main_nav_right js--main-nav">
+                    <li>
+                        <!-- <button id="modalBtn" class="button">Login</button> -->
+                        <a id="modalBtn" href="#"> <i class="ion-log-in"></i> Login</a>
+                    </li>
+                    <li><a href=""><i class="ion-android-cart icon_nav"></i></a></li>
                 </ul>
                 <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
             </div>
@@ -73,7 +160,7 @@
         </div>
     </section>
 
-    <section id="menu" class="section-meals">
+    <section class="section-meals">
         <ul class="meals-showcase clearfix">
             <li>
                 <figure class="meal-photo">
@@ -149,17 +236,74 @@
         </div>
     </section>
 
-    <section class="section-plans js--section-plans" id="plans">
+    <section class="section-plans js--section-plans" id="menu">
         <div class="row">
             <h2>Our Menu</h2>
         </div>
+        <!-- city template -->
+        <div class="row js--wp-3">
+            <div class="col span-1-of-4 box">
+                <img src="resources/img/lisbon-3.jpg" alt="Lisbon">
+                <h3>Lisbon</h3>
+                <div class="city-feature">
+                    <i class="ion-ios-person icon-small"></i> 1600+ happy eaters
+                </div>
+                <div class="city-feature">
+                    <i class="ion-ios-star icon-small"></i> 60+ top chefs
+                </div>
+                <div class="city-feature">
+                    <i class="ion-social-twitter icon-small"></i>
+                    <a href="#">@omnifood_lx</a>
+                </div>
+            </div>
+            <div class="col span-1-of-4 box">
+                <img src="resources/img/san-francisco.jpg" alt="San Francisco">
+                <h3>San Francisco</h3>
+                <div class="city-feature">
+                    <i class="ion-ios-person icon-small"></i> 3700+ happy eaters
+                </div>
+                <div class="city-feature">
+                    <i class="ion-ios-star icon-small"></i> 160+ top chefs
+                </div>
+                <div class="city-feature">
+                    <i class="ion-social-twitter icon-small"></i>
+                    <a href="#">@omnifood_sf</a>
+                </div>
+            </div>
+            <div class="col span-1-of-4 box">
+                <img src="resources/img/berlin.jpg" alt="Berlin">
+                <h3>Berlin</h3>
+                <div class="city-feature">
+                    <i class="ion-ios-person icon-small"></i> 2300+ happy eaters
+                </div>
+                <div class="city-feature">
+                    <i class="ion-ios-star icon-small"></i> 110+ top chefs
+                </div>
+                <div class="city-feature">
+                    <i class="ion-social-twitter icon-small"></i>
+                    <a href="#">@omnifood_berlin</a>
+                </div>
+            </div>
+            <div class="col span-1-of-4 box">
+                <img src="resources/img/london.jpg" alt="London">
+                <h3>London</h3>
+                <div class="city-feature">
+                </div>
+                <div class="city-feature">
+                    <i class="ion-ios-star icon-small"></i> 50+ top chefs
+                </div>
+                <div class="city-feature">
+                    <i class="ion-social-twitter icon-small"></i>
+                    <a href="#">@omnifood_london</a>
+                </div>
+            </div>
+        </div>
+        <!-- plans template -->
         <div class="row">
             <div class="col span-1-of-3">
                 <div class="plan-box js--wp-4">
                     <div>
-                        <h3>Premium</h3>
-                        <p class="plan-price">$399 <span>/ month</span></p>
-                        <p class="plan-price-meal">That's only 13.30$ per meal</p>
+                        <img class="" src="resources/img/1.jpg" alt="img1">
                     </div>
                     <div>
                         <ul>
@@ -216,6 +360,8 @@
             </div>
         </div>
     </section>
+
+
     <!-- <section class="section-cities" id="cities">
         <div class="row">
             <h2>We're currently in these cities</h2>
