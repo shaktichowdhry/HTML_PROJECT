@@ -114,3 +114,21 @@ signUpButton.addEventListener('click', () => {
 signInButton.addEventListener('click', () => {
     container.classList.remove("right-panel-active");
 });
+// --------------------------------
+var tabButtons = document.querySelectorAll(".tabContainer .tabButton button");
+var tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
+
+function showPanel(panelIndex) {
+    tabButtons.forEach(function(node) {
+        node.style.backgroundColor = "";
+        node.style.color = "";
+
+    });
+    tabButtons[panelIndex].style.backgroundColor = "#eee";
+    tabPanels.forEach(function(node) {
+        node.style.display = "none";
+    });
+    tabPanels[panelIndex].style.display = "block";
+    tabPanels[panelIndex].style.backgroundColor = "block";
+}
+showPanel(0);

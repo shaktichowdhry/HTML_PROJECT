@@ -16,21 +16,6 @@
 </head>
 
 <body>
-    <!-- <div id="simpleModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Login</h3>
-                <span class="closeBtn">&times;</span>
-            </div>
-            <div class="modal-body">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, pariatur impedit perspiciatis nemo facilis atque. Non totam earum nulla molestiae consectetur, reprehenderit magni nobis autem modi amet laudantium dicta aut!</p>
-            </div>
-            <div class="modal-footer">
-
-            </div>
-        </div>
-    </div> -->
-
     <div id="simpleModal" class="modal">
         <div class="container" id="container">
             <div class="form-container sign-up-container">
@@ -95,33 +80,32 @@
     <header id="home">
         <nav>
             <div class="row">
-                <img src="resources/img/logo.svg" alt="Omnifood logo" class="logo">
-                <img src="resources/img/logo-dark.svg" alt="Omnifood logo" class="logo-black">
+                <a href="#"><img src="resources/img/logo.svg" alt="Omnifood logo" class="logo"></a>
+                <a href="#"><img src="resources/img/logo-dark.svg" alt="Omnifood logo" class="logo-black"></a>
                 <ul class="main-nav js--main-nav">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#menu">Menu</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#form">Contact</a></li>
-                    <!-- <li>
-                        <a href="#form"> <i class="ion-log-in"></i> Login</a>
-                    </li>
-                    <li><a href=""><i class="ion-android-cart icon_nav"></i></a></li> -->
-                </ul>
-                <ul class="main_nav_right js--main-nav">
-                    <li>
-                        <!-- <button id="modalBtn" class="button">Login</button> -->
+                    <li id="nav_right">
                         <a id="modalBtn" href="#"> <i class="ion-log-in"></i> Login</a>
                     </li>
                     <li><a href=""><i class="ion-android-cart icon_nav"></i></a></li>
                 </ul>
+                <!-- <ul class="main_nav_right js--main-nav">
+                    <li>
+                        <a id="modalBtn" href="#"> <i class="ion-log-in"></i> Login</a>
+                    </li>
+                    <li><a href=""><i class="ion-android-cart icon_nav"></i></a></li>
+                </ul> -->
                 <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
             </div>
         </nav>
         <div class="hero-text-box">
             <h1>We Implement Sweet Dreams</h1>
             <h3>Something sweet for everyone</h3>
-            <a class="btn btn-full js--scroll-to-plans" href="#">Have a craving for a cake?</a> &nbsp;
+            <a class="btn btn-full js--scroll-to-plans" href="#">Have craving for a cake?</a> &nbsp;
             <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
         </div>
 
@@ -131,7 +115,7 @@
         <div class="row">
             <h2>Get to know ous</h2>
             <p class="long-copy">
-                Hello 👋 , we're Sugarfield, your new premium bakery shop that provides you with an outstanding variety of custom cakes, we invite your to discover the quality of our bakery's delcious sweet cakes made every day specially for you.
+                Hello 👋 , we're Sugarfield, your new premium bakery shop that provides you with an outstanding variety of custom cakes. we invite your to discover the quality of our bakery's delcious sweet cakes made every day specially for you.
             </p>
         </div>
 
@@ -161,6 +145,7 @@
     </section>
 
     <section class="section-meals">
+        <h2>Some Featured cakes</h2>
         <ul class="meals-showcase clearfix">
             <li>
                 <figure class="meal-photo">
@@ -223,7 +208,7 @@
                 </div>
                 <div class="works-step clearfix">
                     <div>2</div>
-                    <p>Order your delicious desserts using our website. Or you can even call/Whatsapp us!</p>
+                    <p>Order your delicious desserts using our website. Or you can even call/whatsapp us!</p>
                 </div>
                 <div class="works-step clearfix">
                     <div>3</div>
@@ -240,192 +225,793 @@
         <div class="row">
             <h2>Our Menu</h2>
         </div>
-        <!-- city template -->
-        <div class="row js--wp-3">
-            <div class="col span-1-of-4 box">
-                <img src="resources/img/lisbon-3.jpg" alt="Lisbon">
-                <h3>Lisbon</h3>
-                <div class="city-feature">
-                    <i class="ion-ios-person icon-small"></i> 1600+ happy eaters
+
+        <!-- tabs -->
+        <div class="tabContainer">
+            <div class="tabButton">
+                <button onclick="showPanel(0)">Cakes</button>
+                <button onclick="showPanel(1)">Cupcakes</button>
+                <button onclick="showPanel(2)">Pies &amp; Tarts</button>
+                <button onclick="showPanel(3)">Tea time cakes</button>
+                <button onclick="showPanel(4)">Cookies</button>
+                <button onclick="showPanel(5)">Brownies</button>
+            </div>
+            <!-- cakes Panel -->
+            <div class="tabPanel">
+                <div class="cardContainer">
+                    <!-- cards -->
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/7.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/1.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/5.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/3.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/8.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/5.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/6.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/7.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/8.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/7.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/1.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/5.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/3.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/8.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/5.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/6.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/7.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/8.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/7.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/1.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/5.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/3.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/8.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/5.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/6.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/7.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/8.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
                 </div>
-                <div class="city-feature">
-                    <i class="ion-ios-star icon-small"></i> 60+ top chefs
-                </div>
-                <div class="city-feature">
-                    <i class="ion-social-twitter icon-small"></i>
-                    <a href="#">@omnifood_lx</a>
+
+            </div>
+            <!-- Cupcakes Panel -->
+            <div class="tabPanel">
+                <div class="cardContainer">
+                    <!-- cards -->
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/2.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/1.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/2.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/3.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/4.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col span-1-of-4 box">
-                <img src="resources/img/san-francisco.jpg" alt="San Francisco">
-                <h3>San Francisco</h3>
-                <div class="city-feature">
-                    <i class="ion-ios-person icon-small"></i> 3700+ happy eaters
-                </div>
-                <div class="city-feature">
-                    <i class="ion-ios-star icon-small"></i> 160+ top chefs
-                </div>
-                <div class="city-feature">
-                    <i class="ion-social-twitter icon-small"></i>
-                    <a href="#">@omnifood_sf</a>
+            <!-- Pies and Tarts Panel -->
+            <div class="tabPanel">
+                <div class="cardContainer">
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/5.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/6.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/7.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/8.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col span-1-of-4 box">
-                <img src="resources/img/berlin.jpg" alt="Berlin">
-                <h3>Berlin</h3>
-                <div class="city-feature">
-                    <i class="ion-ios-person icon-small"></i> 2300+ happy eaters
-                </div>
-                <div class="city-feature">
-                    <i class="ion-ios-star icon-small"></i> 110+ top chefs
-                </div>
-                <div class="city-feature">
-                    <i class="ion-social-twitter icon-small"></i>
-                    <a href="#">@omnifood_berlin</a>
+            <!-- Tea time cakes Panel -->
+            <div class="tabPanel">
+                <div class="cardContainer">
+                    <!-- cards -->
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/2.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/1.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/2.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/3.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/4.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/5.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/6.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col span-1-of-4 box">
-                <img src="resources/img/london.jpg" alt="London">
-                <h3>London</h3>
-                <div class="city-feature">
+            <!-- Cookies Panel -->
+            <div class="tabPanel">
+                <div class="cardContainer">
+                    <!-- cards -->
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/3.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/7.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/5.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/3.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/4.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/5.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/6.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
                 </div>
-                <div class="city-feature">
-                    <i class="ion-ios-star icon-small"></i> 50+ top chefs
-                </div>
-                <div class="city-feature">
-                    <i class="ion-social-twitter icon-small"></i>
-                    <a href="#">@omnifood_london</a>
+            </div>
+            <!-- Brownies Panel -->
+            <div class="tabPanel">
+                <div class="cardContainer">
+                    <!-- cards -->
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/2.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/8.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/2.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/3.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/6.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/1.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="resources/img/5.jpg" alt="item">
+                            <p>Black Forest Cake</p>
+                            <p> <span style="color: gray; font-size: 16px;">250g &nbsp;</span> ₹380</p>
+                        </div>
+                        <div class="cardContent">
+                            <i class="ion-ios-heart-outline"></i>
+                            <i class="ion-ios-eye-outline"></i>
+                            <i class="ion-android-cart"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- plans template -->
-        <div class="row">
-            <div class="col span-1-of-3">
-                <div class="plan-box js--wp-4">
-                    <div>
-                        <img class="" src="resources/img/1.jpg" alt="img1">
-                    </div>
-                    <div>
-                        <ul>
-                            <li><i class="ion-ios-checkmark-empty icon-small"></i>1 meal every day</li>
-                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7</li>
-                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Access to newest creations</li>
-                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <a href="#" class="btn btn-full">Sign up now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col span-1-of-3">
-                <div class="plan-box">
-                    <div>
-                        <h3>Pro</h3>
-                        <p class="plan-price">$149 <span>/ month</span></p>
-                        <p class="plan-price-meal">That's only 14.90$ per meal</p>
-                    </div>
-                    <div>
-                        <ul>
-                            <li><i class="ion-ios-checkmark-empty icon-small"></i>1 meal 10 days/month</li>
-                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7</li>
-                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Access to newest creations</li>
-                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <a href="#" class="btn btn-ghost">Sign up now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col span-1-of-3">
-                <div class="plan-box">
-                    <div>
-                        <h3>Starter</h3>
-                        <p class="plan-price">19$ <span>/ meal</span></p>
-                        <p class="plan-price-meal">&nbsp;</p>
-                    </div>
-                    <div>
-                        <ul>
-                            <li><i class="ion-ios-checkmark-empty icon-small"></i>1 meal</li>
-                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Order from 8 am to 12 pm</li>
-                            <li><i class="ion-ios-close-empty icon-small"></i></li>
-                            <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <a href="#" class="btn btn-ghost">Sign up now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </section>
-
-
-    <!-- <section class="section-cities" id="cities">
-        <div class="row">
-            <h2>We're currently in these cities</h2>
-        </div>
-        <div class="row js--wp-3">
-            <div class="col span-1-of-4 box">
-                <img src="resources/img/lisbon-3.jpg" alt="Lisbon">
-                <h3>Lisbon</h3>
-                <div class="city-feature">
-                    <i class="ion-ios-person icon-small"></i> 1600+ happy eaters
-                </div>
-                <div class="city-feature">
-                    <i class="ion-ios-star icon-small"></i> 60+ top chefs
-                </div>
-                <div class="city-feature">
-                    <i class="ion-social-twitter icon-small"></i>
-                    <a href="#">@omnifood_lx</a>
-                </div>
-            </div>
-            <div class="col span-1-of-4 box">
-                <img src="resources/img/san-francisco.jpg" alt="San Francisco">
-                <h3>San Francisco</h3>
-                <div class="city-feature">
-                    <i class="ion-ios-person icon-small"></i> 3700+ happy eaters
-                </div>
-                <div class="city-feature">
-                    <i class="ion-ios-star icon-small"></i> 160+ top chefs
-                </div>
-                <div class="city-feature">
-                    <i class="ion-social-twitter icon-small"></i>
-                    <a href="#">@omnifood_sf</a>
-                </div>
-            </div>
-            <div class="col span-1-of-4 box">
-                <img src="resources/img/berlin.jpg" alt="Berlin">
-                <h3>Berlin</h3>
-                <div class="city-feature">
-                    <i class="ion-ios-person icon-small"></i> 2300+ happy eaters
-                </div>
-                <div class="city-feature">
-                    <i class="ion-ios-star icon-small"></i> 110+ top chefs
-                </div>
-                <div class="city-feature">
-                    <i class="ion-social-twitter icon-small"></i>
-                    <a href="#">@omnifood_berlin</a>
-                </div>
-            </div>
-            <div class="col span-1-of-4 box">
-                <img src="resources/img/london.jpg" alt="London">
-                <h3>London</h3>
-                <div class="city-feature">
-                    <i class="ion-ios-person icon-small"></i> 1200+ happy eaters
-                </div>
-                <div class="city-feature">
-                    <i class="ion-ios-star icon-small"></i> 50+ top chefs
-                </div>
-                <div class="city-feature">
-                    <i class="ion-social-twitter icon-small"></i>
-                    <a href="#">@omnifood_london</a>
-                </div>
-            </div>
-        </div>
-
-    </section> -->
 
     <section id="testimonials" class="section-testimonials">
         <div class="row">
