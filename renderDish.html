@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style-renderDish.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/renderQuery.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/svg" href="resources/img/logo.svg">
+    <title>Sugarfield</title>
+</head>
+
+<body>
+    <div id="simpleModal" class="modal">
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <div class="hOne">
+                        <h1>Create Account</h1>
+                    </div>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="ion-social-facebook"></i></a>
+                        <a href="#" class="social"><i class="ion-social-google"></i></a>
+                        <a href="#" class="social"><i class="ion-social-linkedin"></i></a>
+                    </div>
+                    <div class="modalSpan">
+                        <span>or use your email for registration</span>
+                    </div>
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <button>Sign Up</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <div class="hOne">
+                        <h1>Log in</h1>
+                    </div>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="ion-social-facebook"></i></a>
+                        <a href="#" class="social"><i class="ion-social-google"></i></a>
+                        <a href="#" class="social"><i class="ion-social-linkedin"></i></a>
+                    </div>
+                    <div class="modalSpan">
+                        <span>or use your account</span>
+                    </div>
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <div class="forPass">
+                        <a href="#">Forgot your password?</a>
+                    </div>
+                    <button>Log In</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>To keep connected with us please login with your personal info</p>
+                        <button class="ghost" id="signIn">Log In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Don't have an account?</h1>
+                        <p>Enter your personal details and start journey with us</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <header>
+        <nav>
+            <div class="row">
+                <a href="./index.html"><img src="resources/img/logo.svg" alt="Sugarfield logo" class="logo-black"></a>
+                <ul class="main-nav js--main-nav">
+                    <li><a href="/index.html#home">Home</a></li>
+                    <li><a href="/index.html#about">About</a></li>
+                    <li><a href="/index.html#menu">Menu</a></li>
+                    <li><a href="/index.html#testimonials">Testimonials</a></li>
+                    <li><a href="/index.html#form">Contact</a></li>
+                    <li id="nav_right">
+                        <a id="modalBtn" href="#"> <i class="ion-log-in"></i> Login</a>
+                    </li>
+                    <li><a href=""><i class="ion-android-cart icon_nav"></i></a></li>
+                </ul>
+                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class=" row bread-crums">
+            <!-- ul>li*4>a>i.ion -->
+            <ul>
+                <li><a href="./index.html"><i class="ion-android-home"></i> Home</a></li>
+                <li><a href="./index.html#menu"><i class="ion-android-menu"></i> Menu</a></li>
+                <li><a href="./index.html#menu">Cakes</a></li>
+                <li><a href="">BlackForest</a></li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div class="row dishContainer">
+            <div class="renderDishImage">
+                <img src="./resources/img/2.jpg" alt="">
+            </div>
+            <div class="renderDishDetails">
+                <div class="renderDishDetails__info">
+                    <h2>BlackForest Cake</h2>
+                    <span>⭐⭐⭐⭐</span>
+                    <p>Choco. cake with layer of vanila cream and garnished with choco. flakes and cherries</p>
+                </div>
+
+                <div class="renderDishSelect">
+                    <div class="renderDishSelect__form">
+                        <form>
+                            <div class="formRow">
+                                <label for="choice" class="formHeading">Choice </label>
+                                <label class="radio"><input type="radio" value="Eggless" name="choice">
+                                    <span>eggless</span>
+                                </label>
+                                <label class="radio"><input type="radio" value="Egg" name="choice">
+                                    <span>egg</span>
+                                </label></div>
+                            <div class="formRow">
+                                <label class="formHeading" for="">Size </label>
+                                <select>
+                                    <option>500 gm : Rs 390</option>
+                                    <option>1 kg : Rs 680</option>
+                                </select>
+                            </div>
+                            <div class="formRow">
+                                <label class="formHeading" for="">Flavour </label>
+                                <select class="flavour">
+                                    <option>Select Flavour</option>
+                                    <option>Chocolate Truffle</option>
+                                    <option>Fruit Coctail</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="renderDishSelect__quantity">
+                        <form>
+                            <div class="formRow">
+                                <label for="quantity" class="formHeading">Quantity </label>
+                                <button id="subtract">-</button>
+                                <input id="numberSpinner" type="number" value="1" min="1" max="50">
+                                <button id="add">+</button>
+
+                            </div>
+                        </form>
+                        <h1><span>₹</span> 390.00</h1>
+                    </div>
+                </div>
+
+                <div class="renderDishFooter">
+                    <button><i class="ion-ios-cart"></i> ORDER NOW</button>
+                    <div class="shareLinks">
+                        <p>Share Link -</p>
+                        <ul>
+                            <li><a href="https://www.facebook.com/shakti.chowdhry.7/" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/sugarfield_byricha/" target="_blank"><i class="ion-social-instagram"></i></a></li>
+                            <li>
+                                <a href="https://web.whatsapp.com/" target="_blank"> <i class="ion-social-whatsapp"></i></a>
+                            </li>
+                            <li><a href="https://mail.google.com/" target="_blank"><i class="ion-android-mail"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="#"><i class="ion-social-facebook" id="fb"></i></a></li>
+                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                    <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                This webpage was created for the Minor Project of Jai Narain College of Technology by Shakti Chowdhry.
+                <br> &copy; copyright 2020.<br>
+            </p>
+            <p>
+                Build with <i class="ion-ios-heart" style="color: #ea0000; padding: 0 3px;"></i> in the beautiful city of Lakes, Bhopal, October 2020.
+            </p>
+        </div>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+<script src="vendors/js/jquery.waypoints.min.js"></script>
+<script src="resources/js/script.js"></script>
+<script>
+    let btnSubtract = document.querySelector("#subtract");
+    let btnAdd = document.querySelector("#add");
+    let input = document.querySelector('#numberSpinner');
+
+    btnSubtract.addEventListener('click', () => {
+        if (input.value !== '1') {
+            input.setAttribute('value', parseInt(input.value) - 1);
+        }
+        console.log(input.value);
+    });
+    btnAdd.addEventListener('click', () => {
+        input.setAttribute('value', parseInt(input.value) + 1);
+        console.log(input.value);
+    });
+</script>
+
+</html>
