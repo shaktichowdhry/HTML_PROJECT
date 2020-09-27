@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/style-renderDish.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/checkout.css">
     <link rel="stylesheet" type="text/css" href="resources/css/renderQuery.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" type="image/svg" href="resources/img/logo.svg">
@@ -95,86 +95,13 @@
         </nav>
     </header>
     <section>
-        <div class=" row bread-crums">
-            <!-- ul>li*4>a>i.ion -->
+        <div class="row bread-crums">
             <ul>
-                <li><a href="./index.html"><i class="ion-android-home"></i> Home</a></li>
-                <li><a href="./index.html#menu"><i class="ion-android-menu"></i> Menu</a></li>
-                <li><a href="./index.html#menu">Cakes</a></li>
-                <li><a href="">BlackForest</a></li>
+                <li><a href="./cart.html" class="current">1. &nbsp; CART</a></li>
+                <li><a class="current" href="./login.html">2. &nbsp; LOGIN</a></li>
+                <li><a class="current" href="./checkout.html">3. &nbsp; CHECKOUT</a></li>
+                <li><a>4. &nbsp; ORDER STATUS</a></li>
             </ul>
-        </div>
-    </section>
-    <section>
-        <div class="row dishContainer">
-            <div class="renderDishImage">
-                <img src="./resources/img/2.jpg" alt="">
-            </div>
-            <div class="renderDishDetails">
-                <div class="renderDishDetails__info">
-                    <h2>BlackForest Cake</h2>
-                    <span>⭐⭐⭐⭐</span>
-                    <p>Choco. cake with layer of vanila cream and garnished with choco. flakes and cherries</p>
-                </div>
-
-                <div class="renderDishSelect">
-                    <div class="renderDishSelect__form">
-                        <form>
-                            <div class="formRow">
-                                <label for="choice" class="formHeading">Choice </label>
-                                <label class="radio"><input type="radio" value="Eggless" name="choice">
-                                    <span>eggless</span>
-                                </label>
-                                <label class="radio"><input type="radio" value="Egg" name="choice">
-                                    <span>egg</span>
-                                </label></div>
-                            <div class="formRow">
-                                <label class="formHeading" for="">Size </label>
-                                <select>
-                                    <option>500 gm : Rs 390</option>
-                                    <option>1 kg : Rs 680</option>
-                                </select>
-                            </div>
-                            <div class="formRow">
-                                <label class="formHeading" for="">Flavour </label>
-                                <select class="flavour">
-                                    <option>Select Flavour</option>
-                                    <option>Chocolate Truffle</option>
-                                    <option>Fruit Coctail</option>
-                                </select>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="renderDishSelect__quantity">
-                        <form>
-                            <div class="formRow">
-                                <label for="quantity" class="formHeading">Quantity </label>
-                                <button id="subtract">-</button>
-                                <input id="numberSpinner" type="number" value="1" min="1" max="50">
-                                <button id="add">+</button>
-
-                            </div>
-                        </form>
-                        <h1><span>₹</span> 390.00</h1>
-                    </div>
-                </div>
-
-                <div class="renderDishFooter">
-                    <button onclick="window.location.href='./cart.html'"><i class="ion-ios-cart"></i> ORDER NOW</button>
-                    <div class="shareLinks">
-                        <p>Share Link -</p>
-                        <ul>
-                            <li><a href="https://www.facebook.com/shakti.chowdhry.7/" target="_blank"><i class="ion-social-facebook"></i></a></li>
-                            <li><a href="https://www.instagram.com/sugarfield_byricha/" target="_blank"><i class="ion-social-instagram"></i></a></li>
-                            <li>
-                                <a href="https://web.whatsapp.com/" target="_blank"> <i class="ion-social-whatsapp"></i></a>
-                            </li>
-                            <li><a href="https://mail.google.com/" target="_blank"><i class="ion-android-mail"></i></a></li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
         </div>
     </section>
 
@@ -215,21 +142,5 @@
 <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
 <script src="vendors/js/jquery.waypoints.min.js"></script>
 <script src="resources/js/script.js"></script>
-<script>
-    let btnSubtract = document.querySelector("#subtract");
-    let btnAdd = document.querySelector("#add");
-    let input = document.querySelector('#numberSpinner');
-
-    btnSubtract.addEventListener('click', () => {
-        if (input.value !== '1') {
-            input.setAttribute('value', parseInt(input.value) - 1);
-        }
-        console.log(input.value);
-    });
-    btnAdd.addEventListener('click', () => {
-        input.setAttribute('value', parseInt(input.value) + 1);
-        console.log(input.value);
-    });
-</script>
 
 </html>
