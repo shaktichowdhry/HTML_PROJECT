@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/checkout.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/orderstatus.css">
     <link rel="stylesheet" type="text/css" href="resources/css/renderQuery.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" type="image/svg" href="resources/img/logo.svg">
@@ -100,48 +100,16 @@
                 <li><a href="./cart.html" class="current">1. &nbsp; CART</a></li>
                 <li><a class="current" href="./login.html">2. &nbsp; LOGIN</a></li>
                 <li><a class="current" href="./checkout.html">3. &nbsp; CHECKOUT</a></li>
-                <li><a>4. &nbsp; ORDER STATUS</a></li>
+                <li><a class="current" href="./orderstatus.html">4. &nbsp; ORDER STATUS</a></li>
             </ul>
         </div>
     </section>
     <section>
-
-        <div class="wrapper">
-            <div class="container">
-                <div class="title">Checkout Form</div>
-
-                <div class="input-form">
-                    <div class="section-1">
-                        <div class="items">
-                            <label class="label">card number</label>
-                            <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="1234 1234 1234 1234">
-                        </div>
-                    </div>
-                    <div class="section-2">
-                        <div class="items">
-                            <label class="label">card holder</label>
-                            <input type="text" class="input" placeholder="Coding Market">
-                        </div>
-                    </div>
-                    <div class="section-3">
-                        <div class="items">
-                            <label class="label">Expire date</label>
-                            <input type="text" class="input" data-mask="00 / 00" placeholder="MM / YY">
-                        </div>
-                        <div class="items">
-                            <div class="cvc">
-                                <label class="label">cvc code</label>
-                                <div class="tooltip">?
-                                    <div class="cvc-img"><img src="./resources/img/cvv.png" alt=""></div>
-                                </div>
-                            </div>
-                            <input type="text" class="input" data-mask="0000" placeholder="0000">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="btn" onclick="window.location.href='./orderstatus.html'">proceed</div>
-
+        <div class="statusContainer">
+            <div class="box">
+                <br><br>
+                <i class="ion-checkmark-circled"></i>
+                <h1>Order Successfully Placed</h1>
             </div>
         </div>
     </section>
